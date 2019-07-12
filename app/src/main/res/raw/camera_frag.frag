@@ -1,8 +1,10 @@
+#extension GL_OES_EGL_image_external : require
 //片元着色器
 precision mediump float;
 //由顶点着色器传递过来的采样坐标点
 varying vec2 aCoord;
-uniform sampler2D vTexture;
+uniform samplerExternalOES vTexture;
+
 
 void main()
 {
